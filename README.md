@@ -24,11 +24,14 @@ Wedha Web App is focused on raising awareness about **gender equality** and **cl
    ```bash
     myenv/Scripts/activate
     ```
-2. Install dependencies:
+3. Install dependencies:
     ```bash
     pip install django nltk
     ```
-
+4. Open mywebapp folder:
+    ```bash
+    cd mywebapp
+    ```
 3. Run the app:
     ```bash
     python manage.py runserver
