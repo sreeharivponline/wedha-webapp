@@ -1,6 +1,6 @@
 # Wedha Web App
 
-![Wedha Web App Logo](path/to/logo.png)
+![Wedha Web App Logo](https://github.com/sreeharivponline/wedha-webapp/tree/main/mywebapp/dashboard/static/dashboard/images/logo.png)
 
 ## Introduction
 
