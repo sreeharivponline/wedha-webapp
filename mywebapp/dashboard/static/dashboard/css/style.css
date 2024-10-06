@@ -1,0 +1,228 @@
+/* style.css */
+
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #333; /* Default text color */
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #ecd1f8; /* Light background color */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+.header-left {
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    height: 50px; /* Adjust logo height */
+}
+
+.header-text {
+    margin-left: 20px; /* Space between logo and text */
+}
+
+h1 {
+    margin: 0; /* Remove default margin */
+    font-size: 24px; /* Main heading size */
+}
+
+.tagline {
+    margin: 0; /* Remove default margin */
+    font-size: 16px; /* Tagline size */
+    font-weight: 400; /* Regular weight */
+}
+
+.nav ul {
+    list-style: none; /* Remove bullet points */
+    margin: 0; /* Remove default margin */
+    padding: 0; /* Remove default padding */
+    display: flex; /* Flex for horizontal layout */
+}
+
+.nav li {
+    margin: 0 15px; /* Space between nav items */
+}
+
+.nav a {
+    text-decoration: none; /* Remove underline */
+    padding: 10px 15px; /* Padding for buttons */
+    border-radius: 5px; /* Rounded corners */
+    color: #fff; /* Button text color */
+    transition: background-color 0.3s; /* Transition for hover effect */
+}
+
+.button.home { background-color: #E03E31; } /* Home Button Color */
+.button.what-we-do { background-color: #D83C47; }
+.button.help { background-color: #BF3D61; }
+.button.join-us { background-color: #A63D76; }
+.button.issues { background-color: #783F8D; }
+.button.quiz { background-color: #515A9E; }
+.button.contribute { background-color: #2D66B8; }
+.button.login { background-color: #009BB8; }
+
+.nav a:hover {
+    opacity: 0.9; /* Slightly fade on hover */
+}
+
+.video-banner {
+    position: relative; /* Positioning for text overlay */
+    width: 100%; /* Full width */
+    height: 60vh; /* Adjust height as needed */
+    overflow: hidden; /* Hide overflow */
+}
+
+.video-banner video {
+    width: 100%; /* Full width for the video */
+    height: 100%; /* Full height */
+    object-fit: cover; /* Cover the container */
+}
+
+.banner-text {
+    position: absolute; /* Absolute positioning */
+    top: 50%; /* Center vertically */
+    left: 50%; /* Center horizontally */
+    transform: translate(-50%, -50%); /* Offset for centering */
+    color: #fff; /* White text color */
+    text-align: center; /* Center align text */
+    padding: 20px; /* Padding around text */
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background for readability */
+    border-radius: 10px; /* Rounded corners */
+}
+
+.banner-text h2 {
+    color: #ccc;
+    font-size: 36px; /* Size for main heading */
+    margin-bottom: 10px; /* Space below heading */
+}
+
+.banner-text h3 {
+    color: #ccc;
+    font-size: 28px; /* Size for subheading */
+    margin-top: 20px; /* Space above subheading */
+    margin-bottom: 10px; /* Space below subheading */
+}
+
+.banner-text p {
+    font-size: 18px; /* Size for paragraph text */
+    margin: 5px 0; /* Space around paragraphs */
+}
+
+main {
+    padding: 20px; /* Main padding */
+}
+
+section {
+    margin-bottom: 40px; /* Space between sections */
+}
+
+section h2 {
+    font-size: 28px; /* Section heading size */
+    margin-bottom: 10px; /* Space below section heading */
+}
+
+section p {
+    font-size: 16px; /* Paragraph size */
+}
+
+#social-media h3 {
+    margin-top: 20px; /* Space above social media heading */
+}
+
+footer {
+    text-align: center; /* Center align footer */
+    padding: 10px 0; /* Padding for footer */
+    background-color: #f8f8f8; /* Light background color */
+    position: relative; /* Positioning for footer */
+    bottom: 0; /* Align to the bottom */
+    width: 100%; /* Full width */
+}
+/* Chatbot container */
+#chat-container {
+    width: 400px;
+    height: 500px;
+    border: 2px solid #ccc;
+    border-radius: 8px;
+    background-color: #f5f5f5;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    font-family: Arial, sans-serif;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Chat messages area */
+#chat-messages {
+    flex-grow: 1;
+    padding: 10px;
+    overflow-y: auto;
+    background-color: #fff;
+    border-bottom: 1px solid #ccc;
+}
+
+#chat-messages div {
+    margin: 10px 0;
+    padding: 8px;
+    border-radius: 5px;
+    max-width: 80%;
+    word-wrap: break-word;
+}
+
+#chat-messages div:nth-child(odd) {
+    background-color: #e0f7fa;
+    align-self: flex-start;
+}
+
+#chat-messages div:nth-child(even) {
+    background-color: #ffe0b2;
+    align-self: flex-end;
+}
+
+/* Chat input and button */
+#chat-input {
+    width: 80%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    outline: none;
+}
+
+#send-btn {
+    width: 20%;
+    padding: 10px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+#send-btn:hover {
+    background-color: #45a049;
+}
+
+/* Close button */
+#chat-close-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: transparent;
+    border: none;
+    color: #777;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+#chat-close-btn:hover {
+    color: #000;
+}
