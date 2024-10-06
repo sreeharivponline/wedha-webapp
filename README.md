@@ -1,7 +1,5 @@
 # Wedha Web App
 
-![Wedha Web App Logo](https://github.com/sreeharivponline/wedha-webapp/tree/main/mywebapp/dashboard/static/dashboard/images/logo.png)
-
 ## Introduction
 
 Wedha Web App is focused on raising awareness about **gender equality** and **climate change**. It offers real-time insights, interactive tools, and educational resources.
@@ -20,12 +18,17 @@ Wedha Web App is focused on raising awareness about **gender equality** and **cl
 
 1. Clone the repository:
     ```bash
-    git clone https://github.com/your-username/wedha-web-app.git
+    git clone https://github.com/sreeharivponline/wedha-webapp.git
+    ```
+2. Activate the existing Environment (Windows) or Create New
+   ```bash
+    myenv/Scripts/activate
     ```
 2. Install dependencies:
     ```bash
-    pip install -r requirements.txt
+    pip install django nltk
     ```
+
 3. Run the app:
     ```bash
     python manage.py runserver
