@@ -39,13 +39,14 @@
         }
 
         .logo img {
-            max-width: 250px;
+            max-width: 300px;
             height: auto;
         }
 
         .tagline {
             font-size: 14px;
-            color: #170909;
+            font-weight: bold;
+            color: #025608;
             text-align: center;
             margin-top: 1px;
         }
@@ -334,16 +335,17 @@ body {
 }
 
 .card {
-    background-color: #fff;
-    border-radius: 10px;
+    background-color: #ffffff;
+    border-radius: 15px;
     padding: 50px;
     width: 200px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Shadow for depth */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.41); /* Shadow for depth */
     transition: transform 0.3s, box-shadow 0.3s; /* Smooth transition */
     cursor: pointer;
 }
 
 .card:hover {
+    animation-iteration-count: infinite;
     transform: translateY(-5px); /* Lift effect on hover */
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2); /* Stronger shadow on hover */
 }
@@ -555,7 +557,7 @@ body {
     <!-- Chatbot Container -->
     <div id="chat-container">
         <div id="chat-header">
-            Chatbot
+            WEDHA AI Chatbot
             <button id="chat-close-btn">×</button> <!-- Close Button -->
         </div>
 
@@ -593,8 +595,8 @@ body {
         .then(response => response.json())
         .then(data => {
             var chatMessages = document.getElementById('chat-messages');
-            chatMessages.innerHTML += '<div>User: ' + userMessage + '</div>';
-            chatMessages.innerHTML += '<div>Bot: ' + data.response + '</div>';
+            chatMessages.innerHTML += '<div>Me: ' + userMessage + '</div>';
+            chatMessages.innerHTML += '<div>Wedha-AI: ' + data.response + '</div>';
             document.getElementById('chat-input').value = ''; // Clear input
             chatMessages.scrollTop = chatMessages.scrollHeight; // Auto scroll to the bottom
         })
